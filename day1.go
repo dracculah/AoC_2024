@@ -66,7 +66,7 @@ func convertTableToSlices(strs []string) ([]int, []int) {
 			sl1[idx] = int_1
 			//
 			int_2, err2 := strconv.Atoi(subs[2])
-			assert(err2 == nil, "error converting subs[2]='"+subs[1]+"' to int")
+			assert(err2 == nil, "error converting subs[2]='"+subs[2]+"' to int")
 			sl2[idx] = int_2
 			
 			idx += 1
