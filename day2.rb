@@ -12,18 +12,22 @@ class Report
 		lv = @@v
 		diffs = [lv[1] - lv[0], lv[2] - lv[1], lv[3] - lv[2], lv[4] - lv[3]]
 		diffs.each do |v|
+			# all values must differ (no diff == 0 allowed)
 			if v == 0
 				return false
 			else
+				# the change not greater than 3
 				if v.abs() > 3
 					return false
 				else
+					# all changes must have the same sign (+ or -)
 					if ((v <=> 0) != (diffs[0] <=> 0))
 						return false
 					end
 				end
 			end
 		end
+		# passed everything - good one
 		return true
 	end
 end
@@ -42,7 +46,7 @@ class ReportList
 
 	def fromLines(lines)
 		#puts "got param -> '#{lines}'"
-		cnt = 0
+		cnt = 0 # count good reports
 		lines.each do |line|
 			m = line.match(/\s*(\-*[0-9]+)\s+(\-*[0-9]+)\s+(\-*[0-9]+)\s+(\-*[0-9]+)\s+(\-*[0-9]+)\s*/)
 			if m
