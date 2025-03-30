@@ -1,21 +1,216 @@
-To South from (5,1)
-To South-West from (6,1)
+-- (5,1) East line -> XXMASM
+--M Matched: line -> XXMASM, word -> XMAS
+To East from (5,1)
+-- (5,1) West line -> XSMMM
+-- (5,1) North line -> X
+-- (5,1) South line -> XXXAAMSMMA
+-- (5,1) North-East line -> X
+-- (5,1) South-East line -> XMASMA
+--M Matched: line -> XMASMA, word -> XMAS
+To South-East from (5,1)
+-- (5,1) South-West line -> XMXSX
+-- (5,1) North-West line -> X
+-- (6,1) East line -> XMASM
+--M Matched: line -> XMASM, word -> XMAS
+To East from (6,1)
+-- (6,1) West line -> XXSMMM
+-- (6,1) North line -> X
+-- (6,1) South line -> XMMSMXAAXX
+-- (6,1) North-East line -> X
+-- (6,1) South-East line -> XSAMM
+-- (6,1) South-West line -> XXSAMX
+-- (6,1) North-West line -> X
+-- (5,2) East line -> XMSMSA
+-- (5,2) West line -> XMASM
+--M Matched: line -> XMASM, word -> XMAS
+To West from (5,2)
+-- (5,2) North line -> XX
+-- (5,2) South line -> XXAAMSMMA
+-- (5,2) North-East line -> XX
+-- (5,2) South-East line -> XMMAMS
+--M Matched: line -> XMMAMS, word -> XMAS
+To South-East from (5,2)
+-- (5,2) South-West line -> XSAMX
+-- (5,2) North-West line -> XS
+-- (3,3) East line -> XSXMAAMM
+-- (3,3) West line -> XMA
+-- (3,3) North line -> XAM
+-- (3,3) South line -> XAAASXMM
+-- (3,3) North-East line -> XMX
+-- (3,3) South-East line -> XMAXSAMX
+--M Matched: line -> XMAXSAMX, word -> XMAS
 To South-East from (3,3)
+-- (3,3) South-West line -> XSX
+-- (3,3) North-West line -> XSM
+-- (5,3) East line -> XMAAMM
+-- (5,3) West line -> XSXMA
+-- (5,3) North line -> XXX
+-- (5,3) South line -> XAAMSMMA
+-- (5,3) North-East line -> XMM
+-- (5,3) South-East line -> XSXASA
+-- (5,3) South-West line -> XMAXS
+--M Matched: line -> XMAXS, word -> XMAS
+To South-West from (5,3)
+-- (5,3) North-West line -> XMM
+-- (10,4) East line -> X
+-- (10,4) West line -> XMSMSAMASM
+--M Matched: line -> XMSMSAMASM, word -> XMAS
 To West from (10,4)
+-- (10,4) North line -> XMAM
+-- (10,4) South line -> XMASAMX
+--M Matched: line -> XMASAMX, word -> XMAS
 To South from (10,4)
+-- (10,4) North-East line -> X
+-- (10,4) South-East line -> X
+-- (10,4) South-West line -> XMASAMX
+--M Matched: line -> XMASAMX, word -> XMAS
 To South-West from (10,4)
-To North-West from (10,4)
-To South from (1,5)
-To South-East from (1,5)
-To South from (1,6)
-To North from (2,6)
-To North-East from (2,6)
-To West from (8,7)
+-- (10,4) North-West line -> XMMM
+-- (1,5) East line -> XMASAMXAMM
+--M Matched: line -> XMASAMXAMM, word -> XMAS
+To East from (1,5)
+-- (1,5) West line -> X
+-- (1,5) North line -> XMAMM
+-- (1,5) South line -> XXSSMM
+-- (1,5) North-East line -> XSXMX
+-- (1,5) South-East line -> XXSAMX
+-- (1,5) South-West line -> X
+-- (1,5) North-West line -> X
+-- (7,5) East line -> XAMM
+-- (7,5) West line -> XMASAMX
+--M Matched: line -> XMASAMX, word -> XMAS
+To West from (7,5)
+-- (7,5) North line -> XMASM
+--M Matched: line -> XMASM, word -> XMAS
+To North from (7,5)
+-- (7,5) South line -> XXSSMM
+-- (7,5) North-East line -> XSMA
+-- (7,5) South-East line -> XASA
+-- (7,5) South-West line -> XXSAMX
+-- (7,5) North-West line -> XSXMM
+-- (1,6) East line -> XXAMMXXAMA
+-- (1,6) West line -> X
+-- (1,6) North line -> XXMAMM
+-- (1,6) South line -> XSSMM
+-- (1,6) North-East line -> XMASXX
+--M Matched: line -> XMASXX, word -> XMAS
+To North-East from (1,6)
+-- (1,6) South-East line -> XMXMA
+-- (1,6) South-West line -> X
+-- (1,6) North-West line -> X
+-- (2,6) East line -> XAMMXXAMA
+-- (2,6) West line -> XX
+-- (2,6) North line -> XMSMSM
+-- (2,6) South line -> XMAAX
+-- (2,6) North-East line -> XAMXMM
+-- (2,6) South-East line -> XSAMX
+-- (2,6) South-West line -> XS
+-- (2,6) North-West line -> XX
+-- (6,6) East line -> XXAMA
+-- (6,6) West line -> XMMAXX
+-- (6,6) North line -> XMSMMX
+-- (6,6) South line -> XAAXX
+-- (6,6) North-East line -> XXSMA
+-- (6,6) South-East line -> XSAMX
+-- (6,6) South-West line -> XSAMX
+-- (6,6) North-West line -> XAMXSM
+-- (7,6) East line -> XAMA
+-- (7,6) West line -> XXMMAXX
+-- (7,6) North line -> XXMASM
+--M Matched: line -> XXMASM, word -> XMAS
+To North from (7,6)
+-- (7,6) South line -> XSSMM
+-- (7,6) North-East line -> XAMM
+-- (7,6) South-East line -> XXAM
+-- (7,6) South-West line -> XAMMM
+-- (7,6) North-West line -> XMASAM
+--M Matched: line -> XMASAM, word -> XMAS
+To North-West from (7,6)
+-- (8,7) East line -> XSS
+-- (8,7) West line -> XSASMSMS
+-- (8,7) North line -> XAASAMA
+-- (8,7) South line -> XAMA
+-- (8,7) North-East line -> XMM
+-- (8,7) South-East line -> XAM
+-- (8,7) South-West line -> XSXA
+-- (8,7) North-West line -> XXMASAM
+--M Matched: line -> XXMASAM, word -> XMAS
+To North-West from (8,7)
+-- (3,8) East line -> XAMASAAA
+--M Matched: line -> XAMASAAA, word -> XMAS
+To East from (3,8)
+-- (3,8) West line -> XAS
+-- (3,8) North line -> XSAAAXAM
+-- (3,8) South line -> XMM
+-- (3,8) North-East line -> XMMMMASM
+--M Matched: line -> XMMMMASM, word -> XMAS
+To North-East from (3,8)
+-- (3,8) South-East line -> XMA
+-- (3,8) South-West line -> XAM
+-- (3,8) North-West line -> XMX
+-- (6,9) East line -> XMMMM
+-- (6,9) West line -> XMMMAM
+-- (6,9) North line -> XAAXMSMMX
+-- (6,9) South line -> XX
+-- (6,9) North-East line -> XSXMM
+-- (6,9) South-East line -> XM
+-- (6,9) South-West line -> XA
+-- (6,9) North-West line -> XMMAMM
+-- (2,10) East line -> XMXAXMASX
+--M Matched: line -> XMXAXMASX, word -> XMAS
 To East from (2,10)
-To North from (2,10)
+-- (2,10) West line -> XM
+-- (2,10) North line -> XAAMXMSMSM
+-- (2,10) South line -> X
+-- (2,10) North-East line -> XMASXXSMA
+--M Matched: line -> XMASXXSMA, word -> XMAS
+To North-East from (2,10)
+-- (2,10) South-East line -> X
+-- (2,10) South-West line -> X
+-- (2,10) North-West line -> XM
+-- (4,10) East line -> XAXMASX
+--M Matched: line -> XAXMASX, word -> XMAS
 To East from (4,10)
+-- (4,10) West line -> XMXM
+-- (4,10) North line -> XMAMMSMSMS
+--M Matched: line -> XMAMMSMSMS, word -> XMAS
 To North from (4,10)
+-- (4,10) South line -> X
+-- (4,10) North-East line -> XMASAMX
+--M Matched: line -> XMASAMX, word -> XMAS
 To North-East from (4,10)
-To West from (10,10)
+-- (4,10) South-East line -> X
+-- (4,10) South-West line -> X
+-- (4,10) North-West line -> XMAS
+--M Matched: line -> XMAS, word -> XMAS
+To North-West from (4,10)
+-- (6,10) East line -> XMASX
+--M Matched: line -> XMASX, word -> XMAS
+To East from (6,10)
+-- (6,10) West line -> XAXMXM
+-- (6,10) North line -> XXAAXMSMMX
+-- (6,10) South line -> X
+-- (6,10) North-East line -> XMASA
+--M Matched: line -> XMASA, word -> XMAS
+To North-East from (6,10)
+-- (6,10) South-East line -> X
+-- (6,10) South-West line -> X
+-- (6,10) North-West line -> XMASXX
+--M Matched: line -> XMASXX, word -> XMAS
+To North-West from (6,10)
+-- (10,10) East line -> X
+-- (10,10) West line -> XSAMXAXMXM
+-- (10,10) North line -> XMASAMXMAM
+--M Matched: line -> XMASAMXMAM, word -> XMAS
+To North from (10,10)
+-- (10,10) South line -> X
+-- (10,10) North-East line -> X
+-- (10,10) South-East line -> X
+-- (10,10) South-West line -> X
+-- (10,10) North-West line -> XMASXAMXSM
+--M Matched: line -> XMASXAMXSM, word -> XMAS
 To North-West from (10,10)
-20
+30
+
+
+========== Execution Successful ==========
