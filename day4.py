@@ -32,6 +32,8 @@ def find_word(line, word):
     if ok == len(word):
       found = True
       break
+  if found:
+    print("--M Matched: line -> {}, word -> {}".format(line,word))
   return found
 
 # traversors
@@ -43,7 +45,9 @@ def traverseToEast(x,y,m,word):
       if x+i >= cnt:
         break
     elem_x = (x + i) % cnt
-    line += m[elem_x][y]
+    line += m[y][elem_x]
+  assert(line[0] == 'X')
+  print("-- ({},{}) East line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
 
 def traverseToWest(x,y,m,word):
@@ -54,7 +58,9 @@ def traverseToWest(x,y,m,word):
       if x-i < 0:
         break
     elem_x = (x - i) % cnt
-    line += m[elem_x][y]
+    line += m[y][elem_x]
+  assert(line[0] == 'X')
+  print("-- ({},{}) West line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
 
 def traverseToNorth(x,y,m,word):
@@ -65,7 +71,9 @@ def traverseToNorth(x,y,m,word):
       if y-i < 0:
         break
     elem_y = (y - i) % cnt
-    line += m[x][elem_y]
+    line += m[elem_y][x]
+  assert(line[0] == 'X')
+  print("-- ({},{}) North line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
 
 def traverseToSouth(x,y,m,word):
@@ -76,7 +84,9 @@ def traverseToSouth(x,y,m,word):
       if y+i >= cnt:
         break
     elem_y = (y + i) % cnt
-    line += m[x][elem_y]
+    line += m[elem_y][x]
+  assert(line[0] == 'X')
+  print("-- ({},{}) South line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
 
 def traverseToNorthEast(x,y,m,word):
@@ -90,7 +100,9 @@ def traverseToNorthEast(x,y,m,word):
         break
     elem_x = (x + i) % cnt
     elem_y = (y - i) % cnt
-    line += m[elem_x][elem_y]
+    line += m[elem_y][elem_x]
+  assert(line[0] == 'X')
+  print("-- ({},{}) North-East line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
 
 def traverseToSouthEast(x,y,m,word):
@@ -104,7 +116,9 @@ def traverseToSouthEast(x,y,m,word):
         break
     elem_x = (x + i) % cnt
     elem_y = (y + i) % cnt
-    line += m[elem_x][elem_y]
+    line += m[elem_y][elem_x]
+  assert(line[0] == 'X')
+  print("-- ({},{}) South-East line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
 
 def traverseToSouthWest(x,y,m,word):
@@ -118,7 +132,9 @@ def traverseToSouthWest(x,y,m,word):
         break
     elem_x = (x - i) % cnt
     elem_y = (y + i) % cnt
-    line += m[elem_x][elem_y]
+    line += m[elem_y][elem_x]
+  assert(line[0] == 'X')
+  print("-- ({},{}) South-West line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
 
 def traverseToNorthWest(x,y,m,word):
@@ -132,7 +148,9 @@ def traverseToNorthWest(x,y,m,word):
         break
     elem_x = (x - i) % cnt
     elem_y = (y - i) % cnt
-    line += m[elem_x][elem_y]
+    line += m[elem_y][elem_x]
+  assert(line[0] == 'X')
+  print("-- ({},{}) North-West line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
 
 # the solver
