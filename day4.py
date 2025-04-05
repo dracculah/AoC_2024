@@ -37,7 +37,7 @@ def find_word_with_gaps(line, word):
   return found
 
 def find_word(line, word):
-  return word in line
+  return line.startswith(word)
 
 # traversors
 def traverseToEast(x,y,m,word):
