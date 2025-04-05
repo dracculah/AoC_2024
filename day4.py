@@ -52,6 +52,18 @@ def traverseToEast(x,y,m,word):
   assert(line[0] == 'X')
   print("-- ({},{}) East line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
+  
+def traverseToEast_Func(x,y,m,word):
+	cnt = len(m)
+	len_word = len(word)
+	line = ""
+	cnt_range = min(len_word, cnt-x)
+	for i in range(cnt_range):
+		assert(x+i < cnt)
+		line += m[y][x+i]
+	assert(line != "")
+	assert(line[0] == 'X')
+	return line.startswith(word)
 
 def traverseToWest(x,y,m,word):
   cnt = len(m)
@@ -65,6 +77,18 @@ def traverseToWest(x,y,m,word):
   assert(line[0] == 'X')
   print("-- ({},{}) West line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
+  
+def traverseToWest_Func(x,y,m,word):
+	cnt = len(m)
+	len_word = len(word)
+	line = ""
+	cnt_range = min(len_word, x+1)
+	for i in range(cnt_range):
+		assert(x-i >= 0)
+		line += m[y][x-i]
+	assert(line != "")
+	assert(line[0] == 'X')
+	return line.startswith(word)
 
 def traverseToNorth(x,y,m,word):
   cnt = len(m)
@@ -78,6 +102,18 @@ def traverseToNorth(x,y,m,word):
   assert(line[0] == 'X')
   print("-- ({},{}) North line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
+  
+def traverseToNorth_Func(x,y,m,word):
+	cnt = len(m)
+	len_word = len(word)
+	line = ""
+	cnt_range = min(len_word, y+1)
+	for i in range(cnt_range):
+		assert(y-i >= 0)
+		line += m[y-i][x]
+	assert(line != "")
+	assert(line[0] == 'X')
+	return line.startswith(word)
 
 def traverseToSouth(x,y,m,word):
   cnt = len(m)
@@ -91,6 +127,18 @@ def traverseToSouth(x,y,m,word):
   assert(line[0] == 'X')
   print("-- ({},{}) South line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
+  
+def traverseToSouth_Func(x,y,m,word):
+	cnt = len(m)
+	len_word = len(word)
+	line = ""
+	cnt_range = min(len_word, cnt-y)
+	for i in range(cnt_range):
+		assert(y+i < cnt)
+		line += m[y+i][x]
+	assert(line != "")
+	assert(line[0] == 'X')
+	return line.startswith(word)
 
 def traverseToNorthEast(x,y,m,word):
   cnt = len(m)
@@ -107,6 +155,21 @@ def traverseToNorthEast(x,y,m,word):
   assert(line[0] == 'X')
   print("-- ({},{}) North-East line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
+  
+def traverseToNorthEast_Func(x,y,m,word):
+	cnt = len(m)
+	len_word = len(word)
+	line = ""
+	cnt_range_x = min(len_word, cnt-x)
+	cnt_range_y = min(len_word, y+1)
+	cnt_range = min(cnt_range_x, cnt_range_y)
+	for i in range(cnt_range):
+		assert(x+i < cnt)
+		assert(y-i >= 0)
+		line += m[y-i][x+i]
+	assert(line != "")
+	assert(line[0] == 'X')
+	return line.startswith(word)
 
 def traverseToSouthEast(x,y,m,word):
   cnt = len(m)
@@ -123,6 +186,21 @@ def traverseToSouthEast(x,y,m,word):
   assert(line[0] == 'X')
   print("-- ({},{}) South-East line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
+  
+def traverseToSouthEast_Func(x,y,m,word):
+	cnt = len(m)
+	len_word = len(word)
+	line = ""
+	cnt_range_x = min(len_word, cnt-x)
+	cnt_range_y = min(len_word, cnt-y)
+	cnt_range = min(cnt_range_x, cnt_range_y)
+	for i in range(cnt_range):
+		assert(x+i < cnt)
+		assert(y+i < cnt)
+		line += m[y+i][x+i]
+	assert(line != "")
+	assert(line[0] == 'X')
+	return line.startswith(word)
 
 def traverseToSouthWest(x,y,m,word):
   cnt = len(m)
@@ -139,6 +217,21 @@ def traverseToSouthWest(x,y,m,word):
   assert(line[0] == 'X')
   print("-- ({},{}) South-West line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
+  
+def traverseToSouthWest_Func(x,y,m,word):
+	cnt = len(m)
+	len_word = len(word)
+	line = ""
+	cnt_range_x = min(len_word, x+1)
+	cnt_range_y = min(len_word, cnt-y)
+	cnt_range = min(cnt_range_x, cnt_range_y)
+	for i in range(cnt_range):
+		assert(x-i >= 0)
+		assert(y+i < cnt)
+		line += m[y+i][x-i]
+	assert(line != "")
+	assert(line[0] == 'X')
+	return line.startswith(word)
 
 def traverseToNorthWest(x,y,m,word):
   cnt = len(m)
@@ -155,6 +248,21 @@ def traverseToNorthWest(x,y,m,word):
   assert(line[0] == 'X')
   print("-- ({},{}) North-West line -> {}".format(x+1,y+1,line))
   return find_word(line, word)
+  
+def traverseToNorthWest_Func(x,y,m,word):
+	cnt = len(m)
+	len_word = len(word)
+	line = ""
+	cnt_range_x = min(len_word, x+1)
+	cnt_range_y = min(len_word, y+1)
+	cnt_range = min(cnt_range_x, cnt_range_y)
+	for i in range(cnt_range):
+		assert(x-i >= 0)
+		assert(y-i >= 0)
+		line += m[y-i][x-i]
+	assert(line != "")
+	assert(line[0] == 'X')
+	return line.startswith(word)
 
 # the solver
 def day4(puzzle, word):
@@ -173,28 +281,36 @@ def day4(puzzle, word):
         if traverseToEast(x,y,m,word) == True:
           print("To East from ({},{})".format(x+1,y+1))
           cnt_found += 1
+        assert(traverseToEast(x,y,m,word) == traverseToEast_Func(x,y,m,word))
         if traverseToWest(x,y,m,word) == True:
           print("To West from ({},{})".format(x+1,y+1))
           cnt_found += 1
+        assert(traverseToWest(x,y,m,word) == traverseToWest_Func(x,y,m,word))
         if traverseToNorth(x,y,m,word) == True:
           print("To North from ({},{})".format(x+1,y+1))
           cnt_found += 1
+        assert(traverseToNorth(x,y,m,word) == traverseToNorth_Func(x,y,m,word))
         if traverseToSouth(x,y,m,word) == True:
           print("To South from ({},{})".format(x+1,y+1))
           cnt_found += 1
+        assert(traverseToSouth(x,y,m,word) == traverseToSouth_Func(x,y,m,word))
         # diagonal traversors
         if traverseToNorthEast(x,y,m,word) == True:
           print("To North-East from ({},{})".format(x+1,y+1))
           cnt_found += 1
+        assert(traverseToNorthEast(x,y,m,word) == traverseToNorthEast_Func(x,y,m,word))
         if traverseToSouthEast(x,y,m,word) == True:
           print("To South-East from ({},{})".format(x+1,y+1))
           cnt_found += 1
+        assert(traverseToSouthEast(x,y,m,word) == traverseToSouthEast_Func(x,y,m,word))
         if traverseToSouthWest(x,y,m,word) == True:
           print("To South-West from ({},{})".format(x+1,y+1))
           cnt_found += 1
+        assert(traverseToSouthWest(x,y,m,word) == traverseToSouthWest_Func(x,y,m,word))
         if traverseToNorthWest(x,y,m,word) == True:
           print("To North-West from ({},{})".format(x+1,y+1))
           cnt_found += 1
+        assert(traverseToNorthWest(x,y,m,word) == traverseToNorthWest_Func(x,y,m,word))
   return cnt_found
 
 
