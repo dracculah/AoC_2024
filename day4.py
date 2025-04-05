@@ -23,7 +23,7 @@ def make_matrix(puzzle):
 
 
 # word search with gaps
-def find_word(line, word):
+def find_word_with_gaps(line, word):
   found = False
   ok = 0
   for v in line:
@@ -35,6 +35,9 @@ def find_word(line, word):
   if found:
     print("--M Matched: line -> {}, word -> {}".format(line,word))
   return found
+
+def find_word(line, word):
+  return word in line
 
 # traversors
 def traverseToEast(x,y,m,word):
