@@ -1,5 +1,4 @@
 -- (5,1) East line -> XXMASM
-To East from (5,1)
 -- (5,1) West line -> XSMMM
 -- (5,1) North line -> X
 -- (5,1) South line -> XXXAAMSMMA
@@ -99,7 +98,6 @@ To North-East from (1,6)
 -- (7,6) East line -> XAMA
 -- (7,6) West line -> XXMMAXX
 -- (7,6) North line -> XXMASM
-To North from (7,6)
 -- (7,6) South line -> XSSMM
 -- (7,6) North-East line -> XAMM
 -- (7,6) South-East line -> XXAM
@@ -114,7 +112,6 @@ To North-West from (7,6)
 -- (8,7) South-East line -> XAM
 -- (8,7) South-West line -> XSXA
 -- (8,7) North-West line -> XXMASAM
-To North-West from (8,7)
 -- (3,8) East line -> XAMASAAA
 -- (3,8) West line -> XAS
 -- (3,8) North line -> XSAAAXAM
@@ -132,7 +129,6 @@ To North-West from (8,7)
 -- (6,9) South-West line -> XA
 -- (6,9) North-West line -> XMMAMM
 -- (2,10) East line -> XMXAXMASX
-To East from (2,10)
 -- (2,10) West line -> XM
 -- (2,10) North line -> XAAMXMSMSM
 -- (2,10) South line -> X
@@ -142,7 +138,6 @@ To North-East from (2,10)
 -- (2,10) South-West line -> X
 -- (2,10) North-West line -> XM
 -- (4,10) East line -> XAXMASX
-To East from (4,10)
 -- (4,10) West line -> XMXM
 -- (4,10) North line -> XMAMMSMSMS
 -- (4,10) South line -> X
@@ -173,4 +168,4 @@ To North from (10,10)
 -- (10,10) South-West line -> X
 -- (10,10) North-West line -> XMASXAMXSM
 To North-West from (10,10)
-23
+18
